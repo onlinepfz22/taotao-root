@@ -6,143 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="13ef883e-bca2-4ae8-8975-08708bc3f6fb" name="Default" comment="maven整合淘淘电商小demo">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/6a1427a8-9bd9-4bfc-9204-f2473a4937a0/storage_v2/_src_/schema/pornography.PxEsXw.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/8d842181-e9e4-4845-96a6-3ff5f43157e4/storage_v2/_src_/schema/pornography.PxEsXw.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manage_service_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manage_service_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manage_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manage_web_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/6a1427a8-9bd9-4bfc-9204-f2473a4937a0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/6a1427a8-9bd9-4bfc-9204-f2473a4937a0/storage_v2/_src_/schema/pornography.PxEsXw.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/8d842181-e9e4-4845-96a6-3ff5f43157e4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/8d842181-e9e4-4845-96a6-3ff5f43157e4/storage_v2/_src_/schema/pornography.PxEsXw.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-common/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-common/src/main/java/com/bsoft/root/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-common/src/test/java/com/bsoft/root/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-common/taotao-common.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/java/com/bsoft/root/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/java/com/bsoft/root/controller/DeptController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/java/com/bsoft/root/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/resources/spring/dubbo-remoting-consumer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/resources/spring/springmvc-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/src/test/java/com/bsoft/root/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage-web/taotao-manage-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoDeptMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoDeptMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoRoleAuthorityMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoRoleAuthorityMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoRoleMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoRoleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoUserMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/main/java/com/bsoft/root/mappers/PoUserMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/test/java/com/bsoft/root/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/src/test/java/com/bsoft/root/ExceptionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-dao/taotao-manage-dao.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-interface/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-interface/src/main/java/com/bsoft/root/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-interface/src/main/java/com/bsoft/root/service/DeptService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-interface/src/main/java/com/bsoft/root/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-interface/src/test/java/com/bsoft/root/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-interface/taotao-manage-interface.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/java/com/bsoft/root/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/java/com/bsoft/root/ExceptionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/java/com/bsoft/root/service/impl/BatchUpdateServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/java/com/bsoft/root/service/impl/DeptServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/java/com/bsoft/root/service/impl/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/mybatis/generator/mybatis-generator-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/mybatis/mappers/RoleEntityMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/mybatis/mappers/UserEntityMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/mybatis/mappers/sqlMappersConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/properties/db.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/spring/applicationContextDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/spring/applicationContextService.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/spring/applicationContextTransaction.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/spring/dubbo-remoting-server-provider.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/test/java/com/bsoft/root/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage-service/taotao-manage-service.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manage.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoDept.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoDeptExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoRoleAuthority.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoRoleAuthorityExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoRoleExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/main/java/com/bsoft/root/entity/PoUserExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/src/test/java/com/bsoft/root/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-manage/taotao-manange-pojo/taotao-manange-pojo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotao-root.iml" />
+    <list default="true" readonly="true" id="13ef883e-bca2-4ae8-8975-08708bc3f6fb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -224,8 +89,8 @@
       <file leaf-file-name="mybatis-generator-config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/mybatis/generator/mybatis-generator-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="133">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -823,9 +688,25 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30393487" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="103" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="925" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="120" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="127" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="126" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="919" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1478,12 +1359,20 @@
       <workItem from="1530421287373" duration="2817000" />
       <workItem from="1530447515464" duration="4706000" />
       <workItem from="1530452582659" duration="1597000" />
-      <workItem from="1530533031869" duration="399000" />
+      <workItem from="1530533031869" duration="1702000" />
     </task>
+    <task id="LOCAL-00001" summary="maven整合淘淘电商小demo">
+      <created>1530533474852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530533474852</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83905000" />
+    <option name="totallyTimeSpent" value="85208000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1500,14 +1389,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2055,8 +1944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/taotao-manage/taotao-manage-service/src/main/resources/mybatis/generator/mybatis-generator-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="133">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding />
         </state>
       </provider>
