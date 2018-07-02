@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!---->
+    <dubbo:application name="taotao-manage-service" owner="ysfy"/>
+
+    <!--配置dubbo的注册中心,N/A表示不使用注册中心，dubbo支持的注册中心有
+        1、zookeeper
+        2、redis
+        3、multicast 广播
+        4、simple
+
+        <dubbo:registry address="N/A" />    N/A表示不使用任何注册中心
+    -->
+    <dubbo:registry address="zookeeper://192.168.1.3:2181" />
+    <!--<dubbo:registry address="zookeeper://172.27.35.3:2181" />-->
+    <!--<dubbo:registry address="zookeeper://192.168.1.7:2181" />-->
+
+    <!--配置dubbo通信协议在20880端口暴露服务-->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <!-- dubbo基于注解的服务暴露 配置dubbo注解识别处理器扫描地址-->
+    <dubbo:annotation package="com.bsoft.root.service"/><!-- dubbo @Service注解需要扫描的包,此扫描的包包含的就是需要发布的服务实现类 -->
+    <dubbo:service interface="com.bsoft.root.service.UserService" ref="userService"/><!-- UserService暴露的服务接口，ref引用的名称需要与实现类中的@Component注解中的名称对应 -->
+    <dubbo:service interface="com.bsoft.root.service.DeptService" ref="deptService"/><!-- DeptService暴露的服务接口 -->
+
+    <!--dubbo基于xml配置的服务暴露 声明需要暴露的服务-->
+    <!--<dubbo:service interface="com.bsoft.root.service.UserService" ref="userService"/>
+    <dubbo:service interface="com.bsoft.root.service.DeptService" ref="deptService"/>-->
+    <!-- 声明发布的服务具体实现类 -->
+    <!--<bean id="userService" class="com.bsoft.root.service.impl.UserServiceImpl"/>
+    <bean id="deptService" class="com.bsoft.root.service.impl.DeptServiceImpl"/>-->
+
+</beans>

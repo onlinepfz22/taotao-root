@@ -1,0 +1,2488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="@aliyun" uuid="8d842181-e9e4-4845-96a6-3ff5f43157e4">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="MySQL - pornography@localhost" uuid="b3c5bc85-dda5-4770-8b6b-30f7eabad6aa">
+    <database-info product="MySQL" version="5.7.10-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="pornography"/>
+      <table id="2" parent="1" name="asset_management"/>
+      <table id="3" parent="1" name="bus_info"/>
+      <table id="4" parent="1" name="curing_bridge_reinforce"/>
+      <table id="5" parent="1" name="curing_housing_construction"/>
+      <table id="6" parent="1" name="curing_repair_project"/>
+      <table id="7" parent="1" name="curing_safety_facilities"/>
+      <table id="8" parent="1" name="curing_standardization"/>
+      <table id="9" parent="1" name="daily_inspection"/>
+      <table id="10" parent="1" name="damaged_road_repair_delivery_list"/>
+      <table id="11" parent="1" name="damaged_road_repair_delivery_list_details"/>
+      <table id="12" parent="1" name="index_management"/>
+      <table id="13" parent="1" name="inspection"/>
+      <table id="14" parent="1" name="maintenance_standardization"/>
+      <table id="15" parent="1" name="office_administration"/>
+      <table id="16" parent="1" name="office_logistics_clothing"/>
+      <table id="17" parent="1" name="office_logistics_warehouse"/>
+      <table id="18" parent="1" name="office_party_building"/>
+      <table id="19" parent="1" name="operating_standard"/>
+      <table id="20" parent="1" name="operation_standard_manage"/>
+      <table id="21" parent="1" name="party_construction_discipline_inspection"/>
+      <table id="22" parent="1" name="po_authority"/>
+      <table id="23" parent="1" name="po_clothing"/>
+      <table id="24" parent="1" name="po_consumption"/>
+      <table id="25" parent="1" name="po_dept"/>
+      <table id="26" parent="1" name="po_dic"/>
+      <table id="27" parent="1" name="po_emergency"/>
+      <table id="28" parent="1" name="po_equ_type"/>
+      <table id="29" parent="1" name="po_facility"/>
+      <table id="30" parent="1" name="po_factory"/>
+      <table id="31" parent="1" name="po_log"/>
+      <table id="32" parent="1" name="po_malfunction"/>
+      <table id="33" parent="1" name="po_malfunction_level"/>
+      <table id="34" parent="1" name="po_malfunction_type"/>
+      <table id="35" parent="1" name="po_manual"/>
+      <table id="36" parent="1" name="po_procedures"/>
+      <table id="37" parent="1" name="po_role"/>
+      <table id="38" parent="1" name="po_role_authority"/>
+      <table id="39" parent="1" name="po_subhealth"/>
+      <table id="40" parent="1" name="po_subhealth_facility"/>
+      <table id="41" parent="1" name="po_system_message"/>
+      <table id="42" parent="1" name="po_user"/>
+      <table id="43" parent="1" name="po_warning"/>
+      <table id="44" parent="1" name="policy_document"/>
+      <table id="45" parent="1" name="road_property_damage_compensate_offer"/>
+      <table id="46" parent="1" name="road_property_damage_compensate_offer_details"/>
+      <routine id="47" parent="1" name="getSubHealthList">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="48" parent="1" name="judge_clothing_dispatch">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="49" parent="1" name="saveEmergency">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="50" parent="1" name="saveModifEmergency">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="51" parent="1" name="saveOperationMaintainProcedures">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="52" parent="1" name="updateOperationMaintainProcedures">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <column id="53" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned zerofill</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="54" parent="2" name="type">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="55" parent="2" name="code">
+        <comment>资产编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="56" parent="2" name="name">
+        <comment>资产名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="57" parent="2" name="count">
+        <comment>资产数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="58" parent="2" name="place">
+        <comment>存放地点</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="59" parent="2" name="financial_entry_date">
+        <comment>财务入账日期</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="60" parent="2" name="original_value">
+        <comment>资产原值</comment>
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="61" parent="2" name="depreciated_periods">
+        <comment>已折旧期间数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="62" parent="2" name="use_expected_duration">
+        <comment>预计使用期间数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="63" parent="2" name="actual_amount_depreciation_period">
+        <comment>本期实提折旧额</comment>
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="64" parent="2" name="cumulative_discounts">
+        <comment>累计折扣</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="65" parent="2" name="accumulated_depreciation_year">
+        <comment>本年累计折旧</comment>
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="66" parent="2" name="net_worth">
+        <comment>净值</comment>
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="67" parent="2" name="depreciation_method">
+        <comment>折旧方法</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="68" parent="2" name="current_business_state">
+        <comment>当前业务状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="69" parent="2" name="leasehold_state">
+        <comment>租赁状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="70" parent="2" name="audit_status">
+        <comment>审核状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="71" parent="2" name="effective_state">
+        <comment>生效状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="72" parent="2" name="generated_voucher">
+        <comment>已生成凭证</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="73" parent="2" name="createMan">
+        <comment>创建者</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="74" parent="2" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="75" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="76" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="77" parent="3" name="age">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="78" parent="3" name="brand_num">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="79" parent="3" name="business_scope">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="80" parent="3" name="business_type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="81" parent="3" name="cor_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="82" parent="3" name="fuel_type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="83" parent="3" name="operate_age">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="84" parent="3" name="passenger_num">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="85" parent="3" name="type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <key id="86" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="87" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="88" parent="4" name="budgetNumber">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="89" parent="4" name="budgetSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="90" parent="4" name="contractSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="91" parent="4" name="timeLimit">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="92" parent="4" name="projectName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="93" parent="4" name="construction">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="94" parent="4" name="supervisor">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="95" parent="4" name="design">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="96" parent="4" name="projectSummary">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="97" parent="4" name="personEquipment">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <key id="98" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="99" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="100" parent="5" name="budgetNumber">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="101" parent="5" name="budgetSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="102" parent="5" name="contractSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="103" parent="5" name="timeLimit">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="104" parent="5" name="projectName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="105" parent="5" name="construction">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="106" parent="5" name="supervisor">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="107" parent="5" name="design">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="108" parent="5" name="projectSummary">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="109" parent="5" name="personEquipment">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <key id="110" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="111" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="112" parent="6" name="budgetNumber">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="113" parent="6" name="budgetSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="114" parent="6" name="contractSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="115" parent="6" name="timeLimit">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="116" parent="6" name="projectName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="117" parent="6" name="construction">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="118" parent="6" name="supervisor">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="119" parent="6" name="design">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="120" parent="6" name="projectSummary">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="121" parent="6" name="personEquipment">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <key id="122" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="123" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="124" parent="7" name="budgetNumber">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="125" parent="7" name="budgetSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="126" parent="7" name="contractSum">
+        <mandatory>1</mandatory>
+        <data-type>decimal(12,3)</data-type>
+      </column>
+      <column id="127" parent="7" name="timeLimit">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="128" parent="7" name="projectName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="129" parent="7" name="construction">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="130" parent="7" name="supervisor">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="131" parent="7" name="design">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="132" parent="7" name="projectSummary">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="133" parent="7" name="personEquipment">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <key id="134" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="135" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="136" parent="8" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="137" parent="8" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="138" parent="8" name="content">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="139" parent="8" name="contentFormat">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="140" parent="8" name="contentHtml">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="141" parent="8" name="fileName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="142" parent="8" name="filePath">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="143" parent="8" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="144" parent="8" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="145" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="146" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="147" parent="9" name="dept_id">
+        <comment>部门id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="148" parent="9" name="user_id">
+        <comment>用户id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="149" parent="9" name="inspection_place">
+        <comment>巡检地点</comment>
+        <data-type>varchar(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="150" parent="9" name="inspection_content">
+        <comment>巡检内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="151" parent="9" name="inspection_time">
+        <comment>检巡时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="152" parent="9" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="153" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="154" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="155" parent="10" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="156" parent="10" name="main_delivery_unit">
+        <comment>主送单位</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="157" parent="10" name="claim_form">
+        <comment>索赔表编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="158" parent="10" name="place">
+        <comment>地点</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="159" parent="10" name="date">
+        <comment>日期</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="160" parent="10" name="time">
+        <comment>时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="161" parent="10" name="monitor_man">
+        <comment>监控中心经办人签名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="162" parent="10" name="monitor_date">
+        <comment>监控中心经办人签字时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="163" parent="10" name="business_section_remark">
+        <comment>业务科室修复情况反馈</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="164" parent="10" name="business_section_man">
+        <comment>业务科室经办人签字</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="165" parent="10" name="business_section_response_man">
+        <comment>业务科室负责人签名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="166" parent="10" name="business_section_date">
+        <comment>务科室业负责人签字时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="167" parent="10" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="168" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="169" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="170" parent="11" name="pId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="171" parent="11" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="172" parent="11" name="unit">
+        <comment>单位</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="173" parent="11" name="count">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="174" parent="11" name="remark">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="175" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="176" parent="12" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="177" parent="12" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="178" parent="12" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="179" parent="12" name="content">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="180" parent="12" name="contentFormat">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="181" parent="12" name="contentHtml">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="182" parent="12" name="fileName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="183" parent="12" name="filePath">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="184" parent="12" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="185" parent="12" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="186" parent="12" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="187" parent="13" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="188" parent="13" name="inspect_type">
+        <comment>巡检类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="189" parent="13" name="code">
+        <comment>备编码设</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="190" parent="13" name="time">
+        <comment>检巡时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="191" parent="13" name="userId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="192" parent="13" name="content">
+        <comment>巡检情况</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="193" parent="13" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="194" parent="14" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="195" parent="14" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="196" parent="14" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="197" parent="14" name="content">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="198" parent="14" name="contentFormat">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="199" parent="14" name="contentHtml">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="200" parent="14" name="fileName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="201" parent="14" name="filePath">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="202" parent="14" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="203" parent="14" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="204" parent="14" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="205" parent="15" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="206" parent="15" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="207" parent="15" name="title">
+        <comment>文件标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="208" parent="15" name="content">
+        <comment>简要输入文本内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="209" parent="15" name="contentFormat">
+        <comment>带有格式的纯文本</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="210" parent="15" name="contentHtml">
+        <comment>带有html的政策文件</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="211" parent="15" name="fileName">
+        <comment>文件名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="212" parent="15" name="filePath">
+        <comment>文件路径</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="213" parent="15" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="214" parent="15" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="215" parent="15" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="216" parent="16" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="217" parent="16" name="usePerson">
+        <comment>领用人</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="218" parent="16" name="sex">
+        <comment>性别</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="219" parent="16" name="deptName">
+        <comment>单位</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="220" parent="16" name="post">
+        <comment>岗位</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="221" parent="16" name="cloth_type">
+        <comment>服装类别</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="222" parent="16" name="person_type">
+        <comment>人员类别</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="223" parent="16" name="para1">
+        <comment>长袖衬衫</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="224" parent="16" name="para2">
+        <comment>袖短衬衫</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="225" parent="16" name="para3">
+        <comment>夏裤</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="226" parent="16" name="para4">
+        <comment>春秋服</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="227" parent="16" name="para5">
+        <comment>防寒服</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="228" parent="16" name="para6">
+        <comment>皮带</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="229" parent="16" name="para7">
+        <comment>单鞋</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="230" parent="16" name="para8">
+        <comment>棉鞋</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="231" parent="16" name="para9">
+        <comment>帽子</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="232" parent="16" name="para10">
+        <comment>鸡心领羊毛衫</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="233" parent="16" name="para11">
+        <comment>半高领领羊毛衫</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="234" parent="16" name="para12">
+        <comment>保鞋劳</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="235" parent="16" name="para13">
+        <comment>工装春秋服</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="236" parent="16" name="time">
+        <comment>导入时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="237" parent="16" name="clothingType">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="238" parent="16" name="cycle">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="239" parent="16" name="grantDate">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="240" parent="16" name="quantity">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="241" parent="16" name="workType">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="242" parent="16" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="243" parent="17" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="244" parent="17" name="spareName">
+        <comment>备件名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="245" parent="17" name="stockQuantity">
+        <comment>库存数量</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="246" parent="17" name="useFrequency">
+        <comment>领用数量</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="247" parent="17" name="warningQuantity">
+        <comment>预警数量</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="248" parent="17" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="249" parent="18" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="250" parent="18" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="251" parent="18" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="252" parent="18" name="content">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="253" parent="18" name="contentFormat">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="254" parent="18" name="contentHtml">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="255" parent="18" name="fileName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="256" parent="18" name="filePath">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="257" parent="18" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="258" parent="18" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="259" parent="18" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="260" parent="19" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="261" parent="19" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="262" parent="19" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="263" parent="19" name="content">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="264" parent="19" name="contentFormat">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="265" parent="19" name="contentHtml">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="266" parent="19" name="fileName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="267" parent="19" name="filePath">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="268" parent="19" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="269" parent="19" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="270" parent="19" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="271" parent="20" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="272" parent="20" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="273" parent="20" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="274" parent="20" name="content">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="275" parent="20" name="contentFormat">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="276" parent="20" name="contentHtml">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="277" parent="20" name="fileName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="278" parent="20" name="filePath">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="279" parent="20" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="280" parent="20" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="281" parent="20" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="282" parent="21" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="283" parent="21" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="284" parent="21" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="285" parent="21" name="content">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="286" parent="21" name="contentFormat">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="287" parent="21" name="contentHtml">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="288" parent="21" name="fileName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="289" parent="21" name="filePath">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="290" parent="21" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="291" parent="21" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="292" parent="21" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="293" parent="22" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="294" parent="22" name="UPPER_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="295" parent="22" name="AUTHORITY">
+        <comment>权限名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="296" parent="22" name="TYPE">
+        <comment>权限所属类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;系统菜单&apos;</default-expression>
+      </column>
+      <column id="297" parent="22" name="STATUS">
+        <comment>权限启用状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="298" parent="22" name="AUTHORITY_LINK">
+        <comment>菜单连接</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="299" parent="22" name="MESSAGE">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="300" parent="22" name="MESSAGE_TYPE_ID">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="301" parent="22" name="TIME">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="302" parent="22" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="303" parent="23" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="304" parent="23" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="305" parent="23" name="param">
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="306" parent="23" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="307" parent="24" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="308" parent="24" name="DEPT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="309" parent="24" name="PLAN_TARGETS">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="310" parent="24" name="ONE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="311" parent="24" name="TWO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="312" parent="24" name="THREE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="313" parent="24" name="FOUR">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="314" parent="24" name="FIVE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="315" parent="24" name="SIX">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="316" parent="24" name="SEVEN">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="317" parent="24" name="EIGHT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="318" parent="24" name="NINE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="319" parent="24" name="TEN">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="320" parent="24" name="ELEVEN">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="321" parent="24" name="TWELVE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="322" parent="24" name="ACTUAL_TARGETS">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="323" parent="24" name="PERCENT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="324" parent="24" name="FLAG">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="325" parent="24" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="326" parent="25" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="327" parent="25" name="UPPER_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="328" parent="25" name="DEPT_NAME">
+        <comment>部门名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="329" parent="25" name="DEPT_ADDRESS">
+        <comment>部门地址</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="330" parent="25" name="DEPT_LINKMAN">
+        <comment>部门负责人</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="331" parent="25" name="DEPT_CREATE_TIME">
+        <comment>部门创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="332" parent="25" name="REMARK">
+        <comment>部门备注</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="333" parent="25" name="STATUS">
+        <comment>部门启用状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="334" parent="25" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="335" parent="26" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="336" parent="26" name="P_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="337" parent="26" name="DIC_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="338" parent="26" name="REMARK">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="339" parent="26" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="340" parent="26" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="341" parent="27" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="342" parent="27" name="emerTypeId">
+        <comment>预案类型id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="343" parent="27" name="emerDes">
+        <comment>预案描述纯文本</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="344" parent="27" name="emerDesFormat">
+        <comment>带有格式的预案描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="345" parent="27" name="emerDesHtml">
+        <comment>带有html的预案描述文本</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="346" parent="27" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="347" parent="27" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="348" parent="27" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="349" parent="28" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="350" parent="28" name="EQU_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="351" parent="28" name="IS_PROCEDURES">
+        <comment>是否上传了操作规程</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="352" parent="28" name="IS_MANUAL">
+        <comment>是否上传了操作手册</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="353" parent="28" name="REMARK">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="354" parent="28" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="355" parent="28" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="356" parent="29" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="357" parent="29" name="FAC_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="358" parent="29" name="FAC_SYSTEM_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="359" parent="29" name="FAC_STATUS_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="360" parent="29" name="FAC_UNIT_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="361" parent="29" name="FAC_IMPORTANT_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="362" parent="29" name="FAC_MANAGE_DEPT_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="363" parent="29" name="FAC_CREATE_DEPT_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="364" parent="29" name="FAC_WORK_DEPT_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="365" parent="29" name="FAC_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="366" parent="29" name="FAC_ASSETS_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="367" parent="29" name="FACILITY_NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="368" parent="29" name="FAC_MODEL">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="369" parent="29" name="FAC_PLACE">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="370" parent="29" name="FAC_COUNT">
+        <data-type>varchar(11)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="371" parent="29" name="FAC_RERSPONSE">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="372" parent="29" name="FAC_ENABLE_DATE">
+        <comment>启用日期</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="373" parent="29" name="FAC_PRICE">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="374" parent="29" name="FAC_DATE_LIMIT">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="375" parent="29" name="FAC_WEIGHT">
+        <data-type>varchar(11)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="376" parent="29" name="FAC_SIZE">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="377" parent="29" name="FAC_SERIAL_NUM">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="378" parent="29" name="FAC_OUT_DATE">
+        <comment>出厂日期</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="379" parent="29" name="FAC_REMARK">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="380" parent="29" name="FAC_ENGLISH_NAME">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="381" parent="29" name="STATUS">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="382" parent="29" name="LAST_DATE">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="383" parent="29" name="FAC_SUB_HEALTH">
+        <comment>亚健康标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="384" parent="29" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="385" parent="30" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="386" parent="30" name="FAC_NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="387" parent="30" name="FAC_ADD">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="388" parent="30" name="FAC_PHONE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="389" parent="30" name="FAC_WORK">
+        <comment>主营业务</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="390" parent="30" name="REMARK">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="391" parent="30" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="392" parent="30" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="393" parent="31" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="394" parent="31" name="USERNAME">
+        <comment>用户</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="395" parent="31" name="DESCRIPTION">
+        <comment>方法描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="396" parent="31" name="METHOD">
+        <comment>方法调用</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="397" parent="31" name="TYPE">
+        <comment>日志类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="398" parent="31" name="REQUEST_IP">
+        <comment>请求用户ip</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="399" parent="31" name="EXCEPTION_CODE">
+        <comment>异常代码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="400" parent="31" name="EXCEPTION_DETAIL">
+        <comment>异常描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="401" parent="31" name="PARAMS">
+        <comment>方法调用参数</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(800)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="402" parent="31" name="DATE">
+        <comment>记录日期</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="403" parent="31" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="404" parent="32" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="405" parent="32" name="MAL_LEVEL_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="406" parent="32" name="MAL_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="407" parent="32" name="MAL_MAN">
+        <comment>维修人</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="408" parent="32" name="MAL_CODE">
+        <comment>设备条形码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="409" parent="32" name="MAL_NAME">
+        <comment>设备名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="410" parent="32" name="MAL_DES">
+        <comment>故障描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(400)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="411" parent="32" name="MAL_RES">
+        <comment>故障解决措施</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(400)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="412" parent="32" name="MAL_BEGIN_TIME">
+        <comment>故障开始时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="413" parent="32" name="MAL_FINISH_TIME">
+        <comment>故障修复完成时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="414" parent="32" name="MAL_CASHIER">
+        <comment>维修费用</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="415" parent="32" name="REMARK">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="416" parent="32" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="417" parent="33" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="418" parent="33" name="MAL_LEVEL">
+        <comment>故障等级</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="419" parent="33" name="REMARK">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="420" parent="33" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="421" parent="33" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="422" parent="34" name="ID">
+        <comment>故障类别</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="423" parent="34" name="MAL_NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="424" parent="34" name="REMARK">
+        <comment>备注</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="425" parent="34" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="426" parent="34" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="427" parent="35" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="428" parent="35" name="FAC_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="429" parent="35" name="MANUAL_NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="430" parent="35" name="MANUAL_FILE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="431" parent="35" name="MANUAL_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="432" parent="35" name="REMARK">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="433" parent="35" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="434" parent="35" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="435" parent="36" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="436" parent="36" name="FAC_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="437" parent="36" name="PRO_NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="438" parent="36" name="PRO_CONTEXT_HTML">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="439" parent="36" name="PRO_FORMAT_CONTEXT">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="440" parent="36" name="PRO_CONTEXT">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="441" parent="36" name="PRO_IMG">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="442" parent="36" name="PRO_DATE">
+        <comment>时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="443" parent="36" name="PRO_FLAG">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="444" parent="36" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="445" parent="37" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="446" parent="37" name="ROLENAME">
+        <comment>角色名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="447" parent="37" name="STATUS">
+        <comment>角色启用状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="448" parent="37" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="449" parent="38" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="450" parent="38" name="ROLE_ID">
+        <comment>所属角色id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="451" parent="38" name="AUTHORITY_ID">
+        <comment>权限id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="452" parent="38" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="453" parent="39" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="454" parent="39" name="MAL_FARE">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;50&apos;</default-expression>
+      </column>
+      <column id="455" parent="39" name="MAL_YEAR_LIMIT">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="456" parent="39" name="FLAG">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <key id="457" parent="39" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="458" parent="40" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="459" parent="40" name="FAC_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="460" parent="40" name="FAC_NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="461" parent="40" name="FAC_MODEL">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="462" parent="40" name="FAC_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="463" parent="40" name="FAC_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="464" parent="40" name="FAC_PLACE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="465" parent="40" name="FAC_MANAGE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="466" parent="40" name="FAC_MANAGE_NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="467" parent="40" name="FAC_FINISH_TIME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="468" parent="40" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="469" parent="41" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="470" parent="41" name="MESSAGE_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="471" parent="41" name="MESSAGE">
+        <comment>系统公告内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="472" parent="41" name="TIME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="473" parent="41" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="474" parent="41" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="475" parent="42" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="476" parent="42" name="USERNAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="477" parent="42" name="PASSWORD">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="478" parent="42" name="REALNAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="479" parent="42" name="LASTTIME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="480" parent="42" name="DEPT_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="481" parent="42" name="ROLE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="482" parent="42" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+      </column>
+      <key id="483" parent="42" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="484" parent="43" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="485" parent="43" name="FAC_TYPE_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="486" parent="43" name="WARNING_PARAM">
+        <comment>预警参数值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="487" parent="43" name="NOT_COUNT">
+        <comment>未过期设备数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="488" parent="43" name="IS_COUNT">
+        <comment>过期设备数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="489" parent="43" name="REMARK">
+        <comment>注备</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="490" parent="43" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="491" parent="44" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="492" parent="44" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="493" parent="44" name="title">
+        <comment>文件标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="494" parent="44" name="content">
+        <comment>简要输入文本内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="495" parent="44" name="contentFormat">
+        <comment>带有格式的纯文本</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="496" parent="44" name="contentHtml">
+        <comment>带有html的政策文件</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="497" parent="44" name="fileName">
+        <comment>文件名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="498" parent="44" name="filePath">
+        <comment>文件路径</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="499" parent="44" name="time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="500" parent="44" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="501" parent="44" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="502" parent="45" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="503" parent="45" name="dicTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="504" parent="45" name="quotation_unit">
+        <comment>报价单位</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="505" parent="45" name="claim_form">
+        <comment>索赔表编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="506" parent="45" name="accident_unit">
+        <comment>肇事单位</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="507" parent="45" name="accident_grade">
+        <comment>肇事车牌</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(7)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="508" parent="45" name="accident_time">
+        <comment>肇事时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="509" parent="45" name="accident_place">
+        <comment>肇事地点</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="510" parent="45" name="brief_situation">
+        <comment>简要情况</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="511" parent="45" name="total">
+        <comment>合计</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="512" parent="45" name="department_details">
+        <comment>部门意见</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="513" parent="45" name="agent">
+        <comment>经办人</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="514" parent="45" name="time">
+        <comment>上报时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="515" parent="45" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="516" parent="45" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="517" parent="46" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="518" parent="46" name="pId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="519" parent="46" name="name">
+        <comment>名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="520" parent="46" name="unit">
+        <comment>单位</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="521" parent="46" name="count">
+        <comment>数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(6)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="522" parent="46" name="price">
+        <comment>单价</comment>
+        <mandatory>1</mandatory>
+        <data-type>double(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="523" parent="46" name="account">
+        <comment>总金额</comment>
+        <mandatory>1</mandatory>
+        <data-type>double(12)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="524" parent="46" name="remark">
+        <comment>备注</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="525" parent="46" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <argument id="526" parent="48" name="returnResult">
+        <direction>OUT</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="527" parent="49" name="emerTypeId">
+        <direction>IN</direction>
+        <data-type>int(11)</data-type>
+      </argument>
+      <argument id="528" parent="49" name="emerDes">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="529" parent="49" name="emerDesFormat">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="530" parent="49" name="emerDesHtml">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="531" parent="49" name="time">
+        <direction>IN</direction>
+        <data-type>varchar(20)</data-type>
+      </argument>
+      <argument id="532" parent="49" name="status">
+        <direction>IN</direction>
+        <data-type>int(1)</data-type>
+      </argument>
+      <argument id="533" parent="49" name="result">
+        <direction>OUT</direction>
+        <data-type>varchar(10)</data-type>
+      </argument>
+      <argument id="534" parent="50" name="iden">
+        <direction>IN</direction>
+        <data-type>int(11)</data-type>
+      </argument>
+      <argument id="535" parent="50" name="emerTypeId">
+        <direction>IN</direction>
+        <data-type>int(11)</data-type>
+      </argument>
+      <argument id="536" parent="50" name="emerDes">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="537" parent="50" name="emerDesFormat">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="538" parent="50" name="emerDesHtml">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="539" parent="50" name="timeF">
+        <direction>IN</direction>
+        <data-type>varchar(20)</data-type>
+      </argument>
+      <argument id="540" parent="50" name="status">
+        <direction>IN</direction>
+        <data-type>int(1)</data-type>
+      </argument>
+      <argument id="541" parent="50" name="result">
+        <direction>OUT</direction>
+        <data-type>varchar(10)</data-type>
+      </argument>
+      <argument id="542" parent="51" name="facTypeId">
+        <direction>IN</direction>
+        <data-type>int(11)</data-type>
+      </argument>
+      <argument id="543" parent="51" name="proName">
+        <direction>IN</direction>
+        <data-type>varchar(80)</data-type>
+      </argument>
+      <argument id="544" parent="51" name="proContextHtml">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="545" parent="51" name="proFormatContext">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="546" parent="51" name="proContext">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="547" parent="51" name="proImg">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="548" parent="51" name="proDate">
+        <direction>IN</direction>
+        <data-type>varchar(30)</data-type>
+      </argument>
+      <argument id="549" parent="51" name="proFlag">
+        <direction>IN</direction>
+        <data-type>varchar(30)</data-type>
+      </argument>
+      <argument id="550" parent="51" name="result">
+        <direction>OUT</direction>
+        <data-type>varchar(10)</data-type>
+      </argument>
+      <argument id="551" parent="52" name="id">
+        <direction>IN</direction>
+        <data-type>int(11)</data-type>
+      </argument>
+      <argument id="552" parent="52" name="proName">
+        <direction>IN</direction>
+        <data-type>varchar(80)</data-type>
+      </argument>
+      <argument id="553" parent="52" name="proContextHtml">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="554" parent="52" name="proFormatContext">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="555" parent="52" name="proContext">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="556" parent="52" name="proImg">
+        <direction>IN</direction>
+        <data-type>longtext</data-type>
+      </argument>
+      <argument id="557" parent="52" name="proDate">
+        <direction>IN</direction>
+        <data-type>varchar(30)</data-type>
+      </argument>
+      <argument id="558" parent="52" name="proFlag">
+        <direction>IN</direction>
+        <data-type>varchar(30)</data-type>
+      </argument>
+      <argument id="559" parent="52" name="result">
+        <direction>OUT</direction>
+        <data-type>varchar(10)</data-type>
+      </argument>
+    </database-model>
+  </data-source>
+</component>
