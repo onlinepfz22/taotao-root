@@ -4,11 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- 淘淘根工程 -->
     <groupId>com.bsoft.root</groupId>
     <artifactId>taotao-root</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <!-- 淘淘模块工程 -->
     <modules>
       <module>taotao-common</module>
       <module>taotao-manage</module>
@@ -360,4 +362,5 @@
 
       </pluginManagement>
     </build>
+
 </project>
